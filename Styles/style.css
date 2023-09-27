@@ -1,0 +1,64 @@
+header{
+    background-color: blue;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer{
+    height: 600px;
+    background-color: #B6763A;
+    margin-top: 50px;
+}
+.sectionCont{
+ height: 700px;
+ margin-top: 50px;
+}
+/*Estilos Logo de la pagina*/
+.logoCont{
+    background-color: blueviolet;
+    width: 40%;
+}
+.logoCont img{
+    width: 15%;
+    height: 100%;
+}
+/*Estilos de la barra de navegacion*/
+.navCont{
+    background-color: chocolate;
+    width: 50%;
+}
+
+.navCont nav ul{
+    display: flex;
+    gap: 1.5rem;
+}
+.navCont nav ul li{
+    list-style: none;
+}
+.navCont nav ul li a{
+    text-decoration: none;
+}
+
+/*Estilos del Slider*/
+#sliderCont{
+    height: 65vh;
+    background-color: #337397;
+}
+#sobreNosotros{
+    background-color: #8E3AB6;
+}
+
+#nuestrosJuegos{
+    background-color: #3AB6B6;
+}
+
+#carreras{
+    background-color: #9DB63A;
+}
+
