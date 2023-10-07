@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/normalize.css">
-    <link rel="stylesheet" href="Styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/normalize.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c4bf04a81.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Game Dev Studio</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <div class="logoCont"><img src="IMG/Game dev ARG Logo.png" alt="Placeholder"></div>
-        <div class="navCont">
-            <nav>
-            <ul>
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="">Noticias</a></li>
-                <li><a href="nosotros.html">Nuestros Juegos</a></li>
-            </ul>
+      <div class="logoCont">
+        <img src="IMG/Index/Game dev ARG (3).png" alt="Placeholder" />
+      </div>
+      <div class="navCont">
+        <nav>
+          <ul>
+            <li><a href="">Quienes somos</a></li>
+            <li><a href="">Noticias</a></li>
+            <li><a href="nosotros.html">Nuestros Juegos</a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
     </header>
     <section>
-        <div id="sliderCont"></div>
-        <div id="sobreNosotros" class="sectionCont"></div>
-        <div id="nuestrosJuegos" class="sectionCont"></div>
-        <div id="carreras" class="sectionCont"></div>
+      <div id="sliderCont">
+        <div class="sliderInner">
+          <img src="IMG/Index/Cloudpunk-portada.webp" alt="Cloudpunk-portada" />
+          <img
+            src="IMG/Index/sekiro-shadows-die-twice.webp"
+            alt="sekiro-shadows-die-twice"
+          />
+          <img src="IMG/Index/wall-world-11ui7.webp" alt="wall-world-11ui7" />
+        </div>
+        <div class="arrowIcon">
+            <i class="fa-solid fa-arrow-left" id="left"></i>
+            <i class="fa-solid fa-arrow-right" id="right"></i>
+        </div>
+      </div>
+      <div id="sobreNosotros" class="sectionCont"></div>
+      <div id="nuestrosJuegos" class="sectionCont"></div>
+      <div id="carreras" class="sectionCont"></div>
     </section>
-    
-    <footer>
-    </footer>
-    
-</body>
+
+    <footer></footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
