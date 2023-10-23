@@ -19,7 +19,6 @@ section{
 footer{
     height: 600px;
     margin-top: 50px;
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -169,7 +168,7 @@ footer{
 .gridCont{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 15rem);
     height: 90%;
     align-items: center;
     justify-items: center;
@@ -207,10 +206,24 @@ footer{
 }
 
 /*Estilos del footer*/
+.container-foot{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    align-items: center;
+}
 
 .contact-us{
     width: 50%;
     height: 70%;
+}
+.contact-us h2{
+    font-weight: bold;
+    color: rgb(222, 194, 78);
+}
+.contact-us p{
+    color: aliceblue;
 }
 
 
@@ -224,5 +237,54 @@ footer{
 
 .contact-cont h2{
     font-size: 2rem;
+    color: rgb(222, 194, 78);
+}
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.social-icons li a{
+    text-decoration: none;
     color: aliceblue;
+    font-size: 2rem;
+}
+
+
+/*Responsive design*/
+
+@media (max-width: 1000px){
+    .arrowIcon{
+        bottom: 50%;
+    }
+    #sobreNosotros{
+        flex-direction: column;
+    }
+    #sobreNosotros img{
+        width: 90%;
+    }
+    #carreras{
+        flex-direction: column;
+    }
+    .aboutTxt{
+        width: 90%;
+    }
+    .aboutTxt h2{
+        text-align: center;
+    }
+    #carreras img{
+        width: 90%;
+    }
+    .juegosTitle{
+        text-align: center;
+    }
+}
+
+@media (max-width: 590px){
+    .arrowIcon{
+        bottom: 70%;
+    }
+    .gridCont{
+        grid-template-rows: repeat(3, 10rem);
+    }
 }
