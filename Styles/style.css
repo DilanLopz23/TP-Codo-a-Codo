@@ -1,5 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 body{
     background-color: #0A0B0B;
@@ -9,7 +10,9 @@ header{
     height: 5vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 section{
     display: flex;
@@ -27,32 +30,30 @@ footer{
  margin-top: 50px;
 }
 /*Estilos Logo de la pagina*/
-.logoCont{
-    width: 40%;
-}
-.logoCont img{
-    width: auto;
-    height: 100%;
+.logo{
+    width: 15rem;
+    margin-left: 2rem;
 }
 /*Estilos de la barra de navegacion*/
-.navCont{
-    width: 40%;
+.nav{
+    visibility: visible;
 }
-
-.navCont nav ul{
+.nav-list{
     display: flex;
-    justify-content: space-evenly;
-    gap: 1.5rem;
+    list-style-type: none;
+    gap: 1.2rem;
+    margin-right: 10rem;
 }
-.navCont nav ul li{
-    list-style: none;
+.nav-list li a{
+    color: aliceblue;
+    font-size: 1rem;
 }
-.navCont nav ul li a:hover{
+.nav-list li a:hover{
     text-decoration: underline;
 }
-.navCont nav ul li a{
-    text-decoration: none;
-    color: aliceblue;
+
+.menu-toggle{
+    display: none;
 }
 
 /*Estilos del Slider*/
@@ -75,7 +76,7 @@ footer{
 /*Estilos de las flechas del slider*/
 .arrowIcon{
     position: absolute;
-    bottom: 15%;
+    bottom: 15vh;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -218,6 +219,10 @@ footer{
     width: 50%;
     height: 70%;
 }
+.contact-us img{
+    width: 9rem;
+    object-fit: cover;
+}
 .contact-us h2{
     font-weight: bold;
     color: rgb(222, 194, 78);
@@ -253,9 +258,9 @@ footer{
 
 /*Responsive design*/
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     .arrowIcon{
-        bottom: 50%;
+        bottom: 55%;
     }
     #sobreNosotros{
         flex-direction: column;
@@ -278,13 +283,43 @@ footer{
     .juegosTitle{
         text-align: center;
     }
+    
 }
 
-@media (max-width: 590px){
+@media (max-width: 790px){
     .arrowIcon{
         bottom: 70%;
     }
+    .arrowIcon i{
+        font-size: 2rem;
+    }
     .gridCont{
         grid-template-rows: repeat(3, 10rem);
+    }
+    .menu-toggle{
+        display: flex;
+        margin-right: 4rem;
+        font-size: 1.5rem;
+        color: aliceblue;
+    }
+    .nav{
+        background-color: #0A0B0B;
+        position: absolute;
+        right: 0;
+        left: 100%;
+        top: 5%;
+        bottom: 0;
+        z-index: 1;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 30%;
+        justify-content: space-evenly;
     }
 }

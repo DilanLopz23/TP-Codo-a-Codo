@@ -12,6 +12,8 @@ leftClick();
 
 rightClick();
 
+navBarShow();
+
 function leftClick(){
     let arrowLeft = document.querySelector("#left");
     arrowLeft.addEventListener('click', function hasClick(){
@@ -51,9 +53,28 @@ function sliderFunction(){
         index++;
         if (index > image.length -1){
             index = 0;
-            console.log(index);
+            
         }
-        console.log(index);
+        
         
     }, 5000);
+}
+
+function navBarShow(){
+    let menuToggle = document.querySelector('.menu-toggle');
+    let navBar = document.querySelector('.nav');
+    let conter = 0;
+
+    menuToggle.addEventListener('click', function toggle(){
+        if(conter == 0){
+            navBar.style.visibility = "visible";
+            navBar.style.left = "0%";
+            conter++;
+        }
+        else if(conter>0){
+            navBar.style.left = "100%";
+            navBar.style.visibility = "hidden";
+            conter = 0;
+        }
+    })
 }
