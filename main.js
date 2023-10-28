@@ -43,7 +43,6 @@ function rightClick(){
 
 }
 
-
 function sliderFunction(){
     let percentage = index* -100;
     sliderInner.style.transform = "translateX("+ percentage +"%)";
@@ -55,8 +54,6 @@ function sliderFunction(){
             index = 0;
             
         }
-        
-        
     }, 5000);
 }
 
@@ -78,3 +75,4 @@ function navBarShow(){
         }
     })
 }
+
