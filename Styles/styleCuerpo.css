@@ -176,6 +176,34 @@ header{
     display: none; /*oculta la barra de navegacion*/
 }
 
+#videos {
+    display: flex;
+    justify-content: space-between; /* Para que los videos estén separados con espacio entre ellos */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        flex: 0 0 calc(50% - 10px); /* 2 columnas en pantallas medianas */
+        height: 40vh; /* Ajusta la altura en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-container {
+        flex: 0 0 calc(100% - 10px); /* 1 columna en pantallas pequeñas */
+        height: 50vh; /* Ajusta la altura en pantallas pequeñas */
+    }
+}
+
 /*Estilos del footer*/
 .container-foot{
     background-color: black;
