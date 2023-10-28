@@ -287,6 +287,9 @@ footer{
 }
 
 @media (max-width: 790px){
+    #sliderCont{
+        height: auto;
+    }
     .arrowIcon{
         bottom: 70%;
     }
@@ -321,5 +324,12 @@ footer{
         padding: 0;
         height: 30%;
         justify-content: space-evenly;
+    }
+    .contact-cont h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .aboutTxt{
+        
     }
 }

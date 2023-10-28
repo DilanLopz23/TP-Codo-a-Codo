@@ -1,41 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to bottom, #1c1f24, #0c3d4b); /* Degradado lineal de azul a cyan */
-    background-size: cover; /* Ajustar la imagen al tamaño de la ventana */
-    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-    background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace con el contenido */
-    color: #fff;
+body{
+    background-color: #0A0B0B;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+header{
     background-color: #333;
-    color: #fff;
+    height: 5vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    z-index: 1000;/*nos aseguramos que este delante de otros elementos*/
+    overflow: hidden;
 }
 
-nav h1 {
-    margin: 0;
+.nav{
+    visibility: visible;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
+.nav-list{
     display: flex;
-    padding-right: 20px;
+    list-style-type: none;
+    gap: 1.2rem;
+    margin-right: 10rem;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+.nav-list li a:hover{
+    text-decoration: underline;
 }
 
-nav ul li {
-    margin-right: 20px;
+.menu-toggle{
+    display: none;
 }
 
 
@@ -102,7 +98,7 @@ nav ul li {
 
 /* Estilo para la sección del banner */
 .banner-cabecera {
-    background-image: url("../IMG/banner.jpg"); /* Ruta de la imagen de fondo */
+    background-image: url("../IMG/nuestros_juegos/banner.jpg"); /* Ruta de la imagen de fondo */
     background-size: cover;
     background-position: center;
     height: 400px; /* Altura deseada */
@@ -178,4 +174,99 @@ nav ul li {
 
 ::-webkit-scrollbar {
     display: none; /*oculta la barra de navegacion*/
+}
+
+/*Estilos del footer*/
+.container-foot{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    align-items: center;
+}
+
+.contact-us{
+    width: 50%;
+    height: 70%;
+}
+.contact-us img{
+    width: 9rem;
+    object-fit: cover;
+}
+.contact-us h2{
+    font-weight: bold;
+    color: rgb(222, 194, 78);
+}
+.contact-us p{
+    color: aliceblue;
+}
+
+
+.connect-with-us{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    align-items: self-end;
+    justify-content: end;
+}
+
+.contact-cont h2{
+    font-size: 2rem;
+    color: rgb(222, 194, 78);
+}
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.social-icons li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+@media (max-width: 790px){
+    #sliderCont{
+        height: auto;
+    }
+    .arrowIcon{
+        bottom: 70%;
+    }
+    .arrowIcon i{
+        font-size: 2rem;
+    }
+    .gridCont{
+        grid-template-rows: repeat(3, 10rem);
+    }
+    .menu-toggle{
+        display: flex;
+        margin-right: 4rem;
+        font-size: 1.5rem;
+        color: aliceblue;
+    }
+    .nav{
+        background-color: #0A0B0B;
+        position: absolute;
+        right: 0;
+        left: 100%;
+        top: 5%;
+        bottom: 0;
+        z-index: 1;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 30%;
+        justify-content: space-evenly;
+    }
+    .contact-cont h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
 }
